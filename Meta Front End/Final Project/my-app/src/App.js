@@ -1,13 +1,20 @@
-import './App.css';
+import React, { useState } from "react";
+import Header from "./Header";
+import Nav from "./Nav";
+import Main from "./Main";
+import Footer from "./Footer";
 
-function App() {
+const App = () => {
+  const [showReservation, setShowReservation] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Página de inicio</p>
-      </header>
+    <div className="max-w-screen-md mx-auto p-4">
+      <Header />
+      <Nav />
+      <Main showReservation={showReservation} setShowReservation={setShowReservation} />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
