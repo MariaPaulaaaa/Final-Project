@@ -1,9 +1,9 @@
 import React from "react";
+import photo1 from "../src/img.png"
 
 const Header = () => (
-  <header className="text-center py-4 border-b">
-    <h1 className="text-2xl font-bold">Little Lemon</h1>
-    <p>Chicago</p>
+  <header className="header">
+    <img src={photo1} alt="logo" className="logo" />
   </header>
 );
 

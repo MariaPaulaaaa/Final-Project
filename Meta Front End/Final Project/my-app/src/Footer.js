@@ -1,8 +1,7 @@
-<img source='C:\Users\maria\Desktop\Documentos\Programación\Meta Front End\Final Project\Figma Assets\icons_assets\Logo .svg'></img>
 import React from "react";
 
 const Footer = () => (
-  <footer className="text-sm text-center mt-6">
+    <footer className="footer">
     <ul>
         <li>
             <a>Instagram</a>
@@ -25,3 +24,5 @@ const Footer = () => (
     </ul>
   </footer>
 );
+
+export default Footer;

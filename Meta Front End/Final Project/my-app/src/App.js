@@ -3,12 +3,13 @@ import Header from "./Header";
 import Nav from "./Nav";
 import Main from "./Main";
 import Footer from "./Footer";
+import "./App.css";
 
 const App = () => {
   const [showReservation, setShowReservation] = useState(false);
 
   return (
-    <div className="max-w-screen-md mx-auto p-4">
+    <div className="container">
       <Header />
       <Nav />
       <Main showReservation={showReservation} setShowReservation={setShowReservation} />
